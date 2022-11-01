@@ -1,0 +1,92 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "formatstr-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-formatstr-main": "src-formatstr-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1667310817,
+        "narHash": "sha256-J/leHr6b3mTjbaTh9LjrNz8flFZKkUYTcJhF43BoFS4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "formatstr",
+        "rev": "3ead32cde0d001833c53d498ce4223da2ea3d05a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "formatstr",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667110639,
+        "narHash": "sha256-4FbPESZ5LbqQxkJJJBAfk/zKgF9h/4kyUwjjpJwYlbc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f38a1f04d1bec1feb61fd101a0539ae2002a7087",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "formatstr-main": "formatstr-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-formatstr-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1667038400,
+        "narHash": "sha256-gKfLGg00paqhaZkdWjkY0qCKf3gehQhLp3Ny7vLWhDs=",
+        "owner": "guibar64",
+        "repo": "formatstr",
+        "rev": "8d0f058aca2fcf9edeb192515835522170104881",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guibar64",
+        "ref": "refs/heads/main",
+        "repo": "formatstr",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
